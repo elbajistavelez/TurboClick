@@ -1,0 +1,370 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+input#busqueda {
+  margin-top: 10px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  gap: 10px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.producto img {
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#carrito {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#lista-carrito .imagen-preliminar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.mensaje {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria img {
+  max-width: 80%;
+  margin: 10px;
+}
+
+.descripcion {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.navegacion {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navegacion:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Banner superior */
+.banner {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.titulo {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Medios de pago */
+.medios-pago {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icono-pago {
+  height: 40px; /* Ajusta la altura */
+  width: auto; /* Mantén la proporción original */
+}
+
+/* Buscador */
+.buscador {
+  margin: 20px;
+  text-align: center;
+}
+
+.buscador input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* Contenedor de medios de pago */
+.medios-pago-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Título de medios de pago */
+.titulo-medios-pago {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Ajusta el color según tu diseño */
+}
+
+/* Medios de pago */
+.medios-pago {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icono-pago {
+  height: 40px;
+  width: auto;
+}
+/* Contenedor de búsqueda */
+.busqueda-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+#busqueda {
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  flex-grow: 1; /* Hace que el cuadro de búsqueda ocupe el espacio disponible */
+}
+
+.icono-busqueda {
+  font-size: 20px;
+  color: #555;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.icono-busqueda:hover {
+  color: #000; /* Cambia de color al pasar el cursor */
+}
+
+}
+/* Estilo del contenedor del buscador */
+.buscador {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Cuadro de búsqueda */
+#busqueda {
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  font-size: 16px;
+  flex-grow: 1; /* Asegura que el cuadro ocupe el espacio disponible */
+}
+
+/* Estilo del GIF */
+.icono-busqueda {
+  width: 30px; /* Ajusta el tamaño del GIF */
+  height: 30px; /* Ajusta el tamaño del GIF */
+  margin-left: 1px; /* Espacio entre el cuadro y el GIF */
+  cursor: pointer;
+}
+
+.icono-busqueda:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+/* Sección de Productos */
+.seccion-productos {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Títulos de las secciones */
+.seccion-productos h2,
+.seccion-carrito h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Sección del Carrito */
+.seccion-carrito {
+  background-color: #fff; /* Color blanco para resaltar */
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #007bff; /* Borde azul para destacar */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2); /* Sombra azul suave */
+}
+
+/* Lista de productos en el carrito */
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Estilo para el botón de enviar pedido */
+#enviar-pedido {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+#enviar-pedido:hover {
+  background-color: #0056b3;
+}
+/* Estilo para el mensaje de advertencia */
+.mensaje-advertencia {
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: none; /* El mensaje está oculto por defecto */
+}
+
+/* Estilo para el banner superior */
+.banner {
+  background-color: #ff9800; /* Color de fondo atractivo */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Otros estilos */
+#productos {
+  margin-top: 20px;
+}

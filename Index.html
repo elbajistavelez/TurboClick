@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Simple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner superior con mensajes alternados -->
+    <div id="banner" class="banner">
+        <p><b>🚀 Domicilios dentro de Aragua de Primavera son gratuitos 🚀</b></p>
+      </div>
+
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo de la Tienda">
+    </div>
+    <h1 class="titulo">Tienda Turbo Click</h1>
+    <div class="medios-pago-container">
+        <h3 class="titulo-medios-pago">Medios de Pago</h3>
+        <div class="medios-pago">
+      <img src="img/bancolombia.png" alt="Visa" class="icono-pago">
+      <img src="img/nequi.png" alt="MasterCard" class="icono-pago">
+      <img src="img/efectivo.png" alt="PayPal" class="icono-pago">
+      <img src="img/mercadopago.png" alt="PayPal" class="icono-pago">
+    </div>
+</div>
+  </header>
+
+ <!-- Buscador -->
+<div class="buscador">
+    <input type="text" id="busqueda" placeholder="Buscar producto...">
+    
+  </div>
+  
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección de Productos -->
+    <section id="productos" class="seccion-productos">
+      <h2>Productos Disponibles</h2>
+      <!-- Los productos se generarán dinámicamente con JavaScript -->
+    </section>
+  
+   <!-- Sección del carrito -->
+<section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total-carrito">Total: $0</p>
+  
+
+    <!-- Mensaje de advertencia -->
+    <div id="mensaje-advertencia" class="mensaje-advertencia"></div>
+  
+    <button id="enviar-pedido">Enviar Pedido por WhatsApp</button>
+  </section>
+
+
+  
+  <script src="app.js"></script>
+  
+</body>
+
+</html>
